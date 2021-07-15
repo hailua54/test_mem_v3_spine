@@ -1,0 +1,42 @@
+{
+  "game": {
+    "app_id": "656613457",
+    "name": "test_mem_v3_spine",
+    "c_id": "0"
+  },
+  "appConfigMaps": [
+    {
+      "app_id": "UNKNOW",
+      "config_id": "dae9ff"
+    },
+    {
+      "app_id": "656613457",
+      "config_id": "40929d"
+    }
+  ],
+  "configs": [
+    {
+      "app_id": "UNKNOW",
+      "config_id": "dae9ff",
+      "config_name": "Default",
+      "config_remarks": "",
+      "services": []
+    },
+    {
+      "app_id": "656613457",
+      "config_id": "40929d",
+      "config_name": "Default",
+      "config_remarks": "",
+      "services": [
+        {
+          "service_id": "235",
+          "enable": false,
+          "param": {
+            "app_id": "656613457",
+            "store_id": "iOS"
+          }
+        }
+      ]
+    }
+  ]
+}
