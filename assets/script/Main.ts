@@ -15,6 +15,8 @@ export class Main extends Component
 
     spineInd = 0;
 
+    testLoopCount = 0;
+
     start () {
         this.pool = [];
     }
@@ -51,7 +53,16 @@ export class Main extends Component
         sys.garbageCollect();
     }
 
-    // update (deltaTime: number) {
-    //     // [4]
-    // }
+    onTest() {
+        this.testLoopCount = 50*2;
+    }
+
+    update (deltaTime: number) {
+        if (this.testLoopCount > 0)
+        {
+            if (this.testLoopCount % 2 == 0) this.onCreateSpine();
+            else this.onClearSpine();
+            this.testLoopCount--;
+        }
+    }
 }
